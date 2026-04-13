@@ -17,7 +17,7 @@
 const cv=document.getElementById('canvas'),ctx=cv.getContext('2d'),W=480,H=420;
 
 const CHARS=[
-  {id:'touriste',name:'Touriste',speed:5,bodyColor:'#4a90d9',skinColor:'#e8c090',hatColor:'#c8a86e',
+  {id:'touriste',name:'Touriste',speed:3,bodyColor:'#4a90d9',skinColor:'#e8c090',hatColor:'#c8a86e',
    draw(x,y,acc,bc,sc,hc){
     ctx.save();ctx.translate(x,y);
     ctx.fillStyle=hc;ctx.fillRect(-8,-20,16,12);
@@ -30,7 +30,7 @@ const CHARS=[
     ctx.restore();
    }
   },
-  {id:'moine',name:'Moine',speed:3.5,bodyColor:'#5a4530',skinColor:'#e8c090',hatColor:'#2a1e10',
+  {id:'moine',name:'Moine',speed:3,bodyColor:'#5a4530',skinColor:'#e8c090',hatColor:'#2a1e10',
    draw(x,y,acc,bc,sc,hc){
     ctx.save();ctx.translate(x,y);
     ctx.fillStyle=bc;
@@ -43,7 +43,7 @@ const CHARS=[
     ctx.restore();
    }
   },
-  {id:'chevalier',name:'Chevalier',speed:4.5,bodyColor:'#888',skinColor:'#e8c090',hatColor:'#aaa',
+  {id:'chevalier',name:'Chevalier',speed:3,bodyColor:'#888',skinColor:'#e8c090',hatColor:'#aaa',
    draw(x,y,acc,bc,sc,hc){
     ctx.save();ctx.translate(x,y);
     ctx.fillStyle=bc;ctx.fillRect(-11,-6,22,22);
@@ -57,7 +57,7 @@ const CHARS=[
     ctx.restore();
    }
   },
-  {id:'eveque',name:'Évêque',speed:2.5,bodyColor:'#7722aa',skinColor:'#e8c090',hatColor:'#5500aa',
+  {id:'eveque',name:'Évêque',speed:3,bodyColor:'#7722aa',skinColor:'#e8c090',hatColor:'#5500aa',
    draw(x,y,acc,bc,sc,hc){
     ctx.save();ctx.translate(x,y);
     ctx.fillStyle=bc;ctx.fillRect(-11,-5,22,26);
